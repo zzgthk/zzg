@@ -1,0 +1,44 @@
+% Installation of ROS on Ubuntu 14.04
+% zzg 2016-06-01
+
+#installation of ros in ubuntu:
+
+1. add source to the source list
+
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+2. add key to use the source list:
+
+	sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+
+3. update source list:
+
+	sudo apt-get udpate
+
+4. install ros indigo full version:
+
+	sudo apt-get install ros-indigo-desktop-full
+
+	sudo rosdep init 
+
+	rosdep update
+
+	echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+
+	source ~/.bashrc
+
+
+
+5. install some dependency lib for run our program:
+
+	sudo apt-get install libgflags-dev libproj-dev
+
+## FAQ
+
+1. if some error happens like: 
+	'No rule to make target `/usr/lib/x86_64-linux-gnu/libGL.so'
+        check /usr/lib/x86_64-linux-gnu/libGL.so link is right
+
+	repair:
+	sudo rm /usr/lib/x86_64-linux-gnu/libGL.so
+	sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so

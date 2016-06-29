@@ -1,0 +1,32 @@
+
+There are some robotic file format to describe a robot. 
+Here to description the meaning of every file format and give a overall logical among them.
+
+## SDF (Simulator Description File)
+
+SDF is an XML format that describes objects and environments for robot simulators, visualization, and control. 
+Originally developed as part of the Gazebo robot simulator, SDF was designed with scientific robot applications in mind. 
+Over the years, SDF has become a stable, robust, and extensible format capable of describing all aspects of robots, static and dynamic
+objects, lighting, terrain, and even physics.
+
+url: http://sdformat.org/spec
+
+
+## URDF (Unified Robot Description Format)
+
+It is an XML format for representing a robot mode. 
+
+url: 
+
+1. http://gazebosim.org/tutorials/?tut=ros_urdf
+2. http://wiki.ros.org/cn/urdf/Tutorials
+3. http://wiki.ros.org/urdf/Tutorials
+
+
+## DAE (Digital Asset Exchange)
+
+它是COLLADA的模型文件.
+COLLADA是由索尼 (Sony)提出的基于XML的一个开放的、免费的数据交换标准，通过XMLSchema的技术展现三维数字模型，正因为 COLLADA基于XML技术，
+所以这个标准有着十分优秀的移植性，居于不同平台的实时引擎只要支持这个标准，就可以实时表现三维模型。
+
+url: https://www.khronos.org/collada/

@@ -13,7 +13,7 @@
 
 3. update source list:
 
-	sudo apt-get udpate
+	sudo apt-get update
 
 4. install ros indigo full version:
 

@@ -118,3 +118,16 @@ look a container configure:  docker inspect ID
 
 network : docker network ls
 
+### FAQ
+
+#### replace source probleam
+
+After replace ubuntu source to a faster one, when use sudo apt-get update, it may shows:
+
+W: GPG error: http://extras.ubuntu.com trusty Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 16126D3A3E5C1192
+
+Solution:
+
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 16126D3A3E5C1192
+
+

@@ -53,6 +53,10 @@ sudo usermod -aG docker $USER
 
 docker run -ti --name test ubuntu:14.04 /bin/bash
 
+if network not work, you can use the host:
+
+docker run --net=host --name test -i -t ubuntu:14.04 /bin/bash
+
 ## mapping a port to container
 
 docker run -ti -p local_host_port:container_port --name test_port ubuntu:14.04 /bin/bash

@@ -14,7 +14,7 @@ Image: An image is an ordered collection of root filesystem changes and the con 
 Container: A container is an active (or inactive if exited) stateful instantiation of an image.
     https://docs.docker.com/engine/reference/glossary/#container
 
-## Install Docker in Ubuntu 14.04
+## Install Docker on Ubuntu 14.04
 
 [Install Docker on Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
 
@@ -48,6 +48,12 @@ sudo service docker start
 sudo groupadd docker
 
 sudo usermod -aG docker $USER
+
+## Install Docker on Mac
+
+download Docker.dmg from https://store.docker.com/editions/community/docker-ce-desktop-mac and double click to install it.
+
+find the two icons of docker in app desktop, then click the Kitematic and you'll see the DOCKER_CLI hyper link in the left bottom, click it to start a terminal which is environmented by docker env. then you can start as following.
 
 ## A simple Example
 
